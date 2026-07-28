@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Chatbot | جامعة المشرق</title>
+   
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chatbot-popup">
+    
+      <div class="chat-header">
+        <div class="header-info">
+          <img src="header.jpg" alt="شعار جامعة المشرق" width="50" height="50" />
+          <h1>Adnan</h1>
+        </div>
+      </div>
+
+    
+      <div class="chat-body">
+        <div class="message bot-message">
+          <img src="header.jpg" alt="Bot" width="50" height="50" />
+          <div class="message-text">
+            مرحباً! كيف يمكنني مساعدتك اليوم؟
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="chat-footer">
+        <form action="#" class="chat-form" autocomplete="off" spellcheck="false">
+         
+          <textarea
+            placeholder="اكتب رسالتك هنا..."
+            class="message-input"
+            required
+          ></textarea>
+
+          
+          <div class="chat-controls">
+           
+            <button
+              type="button"
+              id="emoji-toggle"
+              class="material-symbols-outlined"
+              title="فتح لوحة الإيموجي"
+              aria-label="فتح لوحة الإيموجي"
+            >
+              sentiment_satisfied
+            </button>
+
+           
+            <button
+              type="button"
+              id="send-voice"
+              class="material-symbols-outlined"
+              title="التسجيل الصوتي"
+              aria-label="التسجيل الصوتي"
+            >
+              voice_chat
+            </button>
+
+           
+            <button
+              type="submit"
+              id="send-message"
+              class="material-symbols-rounded"
+              title="إرسال الرسالة"
+              aria-label="إرسال الرسالة"
+            >
+              arrow_upward
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
